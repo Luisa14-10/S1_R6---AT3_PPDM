@@ -25,8 +25,6 @@ Como a tela mostra cinco informações no mesmo formato (rótulo + valor), extra
 ![alt text](image-7.png)
 
 ## 7. Estados da tela
-A tela pode estar em três situações diferentes:
-- Ainda não chegou resposta (`loading && info === null`), aparece só o spinner com "Consultando a rede...".
-- Se algo deu errado (`errorMsg` tem valor), mostra o card vermelho com o erro.
-- Quando os dados chegam (`info` preenchido), aparece o card com o status da conexão e as informações nas `InfoRow`.
+
+Tem 3 situações que a tela trata: enquanto tá carregando e ainda não tem info nenhuma, mostra só o spinner com "Consultando a rede...". Se der erro em algum momento, aparece o card vermelho. E quando finalmente tem os dados, mostra o card normal com o status da conexão e as InfoRow.
 
