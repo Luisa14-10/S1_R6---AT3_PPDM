@@ -2,7 +2,7 @@
 Esse documento explica a configuração e o uso da biblioteca `expo-network` na tela `RedeWifiScreen`, que mostra o status da conexão de rede do dispositivo em tempo real.
 
 ## 1. Por que essa biblioteca
-A ideia era ter uma tela simples que respondesse "o dispositivo está conectado? a que tipo de rede? tem internet de verdade?", sem precisar o usuário sair do app pra checar isso nas configurações do sistema.
+A ideia era ter uma tela simples que respondesse perguntas como: "o dispositivo está conectado? a que tipo de rede? tem internet de verdade?", sem precisar o usuário sair do app pra checar isso nas configurações do sistema.
 
 ## 2. Instalação
 ![alt text](image-4.png)

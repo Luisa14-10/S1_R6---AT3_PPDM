@@ -9,7 +9,7 @@ Usamos o CLI do próprio Expo em vez do `npm install` direto, porque ele já res
 ![alt text](image.png)
 
 ## 3. Permissões
-Na nossa implementação, a permissão não é declarada em app.json — ela é pedida em tempo de execução, direto no código, logo no início do useEffect da tela, com Location.requestForegroundPermissionsAsync(). Isso pergunta ao usuário se ele permite o acesso ao GPS. 
+Na nossa implementação, a permissão não é declarada em app.json, ela é pedida em tempo de execução, direto no código, logo no início do useEffect da tela, com Location.requestForegroundPermissionsAsync(). Isso pergunta ao usuário se ele permite o acesso ao GPS. 
 ![alt text](image-1.png)
 
 ## 4. Como a navegação chega até a tela
@@ -21,13 +21,13 @@ Tudo acontece dentro de um `useEffect`, em três passos que dependem um do outro
 
 ### 5.1 Pedir permissão
 ![alt text](image-9.png)
-Se o usuário negar, a gente já para por aqui e mostra a mensagem de erro — não faz sentido tentar os próximos passos.
+Se o usuário negar, a gente já para por aqui e mostra a mensagem de erro, não faz sentido tentar os próximos passos.
 
 ### 5.2 Pegar as coordenadas
 ![alt text](image-8.png)
 
 ### 5.3 Transformar coordenadas em endereço
-Usamos `|| ''` em quase todos os campos porque o `reverseGeocodeAsync` nem sempre retorna todas as informações — depende muito da região e da qualidade do sinal.
+Usamos `|| ''` em quase todos os campos porque o `reverseGeocodeAsync` nem sempre retorna todas as informações, depende muito da região e da qualidade do sinal.
 ![alt text](image-3.png)
 
 ### 5.4 Tratamento de erro
